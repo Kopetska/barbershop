@@ -1,0 +1,23 @@
+.touch {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    background: {
+        color: #191C26;
+        image: url('../images/img-footer.png');
+        repeat: no-repeat;
+        size: 625px 644px;
+        position: right;
+    }
+
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.touch__container {
+    display: flex;
+}
+
+.signup {
+    width: 50%;
+}

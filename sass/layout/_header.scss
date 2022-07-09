@@ -1,0 +1,16 @@
+.header {
+    padding: {
+        top: 32px;
+        bottom: 32px;
+        right: 45px;
+        left: 15px;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}

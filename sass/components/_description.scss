@@ -1,0 +1,16 @@
+.description {
+    width: 400px;
+    @include font(400, 18px, 1.67, 0.02em);
+}
+
+.description--light {
+    color: map-get($colors, 'text-on-black');
+}
+
+.description--margin {
+    margin-bottom: 20px;
+}
+
+.description--width {
+    min-width: 450px;
+}

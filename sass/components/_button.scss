@@ -1,0 +1,30 @@
+.button {
+    padding: 12px 20px;
+    min-width: 160px;
+    height: 40px;
+    @include font(600, 12px, 1.33, 0.09em);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid map-get($colors, 'hover');
+    border-radius: 25px;
+    transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+        background-color: map-get($colors, 'hover');
+    }
+}
+
+.button--light {
+    color: map-get($colors, 'white');
+}
+
+.button--dark {
+    color: mp-get($colors, 'title');
+}
+
+.button--center {
+    display: block;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,17 @@
+.uptime {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    @include font(600, 11px, 1.36, 0.1em);
+    text-transform: uppercase;
+    color: map-get($colors, 'white');
+
+    &::before {
+        display: inline-block;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.4);
+        margin-right: 20px;
+    }
+}
+

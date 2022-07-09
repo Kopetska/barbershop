@@ -1,0 +1,61 @@
+.rewards {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.rewards__advantages {
+    width: 50%;
+    padding-left: 100px;
+}
+
+.rewards__container {
+    display: flex;
+}
+
+.rewards-list {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards__item {
+    padding: 20px;
+    width: 170px;
+    height: 133px;
+    text-align: center;
+    background-color: #F7F7F7;
+
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
+
+    &:nth-child(even) {
+        margin-top: 30px;
+    }
+}
+
+.rewards__number {
+    @include font(700, 42px, 1.36, 0.05em);
+    text-align: center;
+    color: map-get($colors, 'title');
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+
+   &::after {
+        content: '+';
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.38;
+        text-align: center;
+        color: map-get($colors, 'hover');
+    }
+}
+.rewards__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: map-get($colors, 'title');
+}

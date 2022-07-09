@@ -1,0 +1,18 @@
+
+.uptime__hours {
+  @extend %font;
+    }
+.address__link {
+    @extend %font;
+    transition: color 300ms linear;
+    &:hover,
+    &:focus {
+        color: map-get($colors, 'hover');
+    }
+}
+.address__link--underline {
+    text-decoration-line: underline;
+}
+.address__item:not(:last-child) {
+    margin-bottom: 20px;
+}

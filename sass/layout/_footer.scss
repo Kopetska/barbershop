@@ -1,0 +1,13 @@
+.footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__copyright {
+    @include font(600, 11px, 1.36, 0.2em);
+    color: map-get($colors, 'text-on-black');
+}

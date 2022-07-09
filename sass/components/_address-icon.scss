@@ -1,0 +1,15 @@
+.address__icon {
+    position: relative;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    stroke: map-get($colors, 'text-on-black');
+    transition: stroke 300ms linear;
+
+.address__link:hover &,
+.address__link:focus & {
+    stroke: map-get($colors, 'hover');
+}
+   
+}

@@ -1,0 +1,12 @@
+.gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.images {
+    display: flex;
+}
+
+.images__item:not(:last-child) {
+    margin-right: 30px;
+}

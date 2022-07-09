@@ -1,0 +1,13 @@
+
+.tel {
+    margin-right: 40px;
+    @include font(600, 12px, 1.33, 0.1em);
+    text-transform: uppercase;
+    color: map-get($colors, 'white');
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: map-get($colors, 'hover');
+    }
+}

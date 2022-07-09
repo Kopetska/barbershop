@@ -1,0 +1,27 @@
+.hero__title {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    @include font(700, 72px, 1.18, 0.05em);
+    color: map-get($colors, 'white');
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    @include font(700, 42px, 1.17, 0.05em);
+}
+
+.title--dark {
+    color: map-get($colors, 'title');
+}
+
+.title--light {
+    color: map-get($colors, 'white');
+}
+
+.title--margin-min {
+    margin-bottom: 20px;
+}
+
+.title--margin-max {
+    margin-bottom: 44px;
+}

@@ -1,0 +1,116 @@
+.application {
+    padding: 20px 20px;
+    width: 455px;
+    min-height: 600px;
+}
+.application__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+.application__text {
+    @include font(700, 20px, 1.15, 0.03em);
+    text-align: center;
+    color: map-get($colors, 'dark');
+    margin-bottom: 20px;
+}
+.application__label {
+    display: block;
+    @include font(400, 14px, 1.17, 0.01em);
+    color: map-get($colors, 'label');
+    margin-bottom: 4px;
+}
+.application__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 10px;
+    color: map-get($colors, 'primary-text');
+
+    &::placeholder {
+        @extend %placeholder;
+    }
+}
+
+.application__input--hover-color:not(:placeholder-shown) {
+    border-color: map-get($colors, 'hover');
+}
+
+.application__message {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: map-get($colors, 'primary-text');
+
+    &::placeholder {
+        @extend %placeholder;
+    }
+}
+.application__input--font {
+    font-style: normal;
+    @include font(400, 15px, 1.39, 0.02em);
+}
+
+.application__checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.application__checkbox {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.application__icon-check {
+    width: 16px;
+    height: 15px;
+    border: 1px solid map-get($colors, 'dark');
+    fill: map-get($colors, 'white');
+    border-radius: 2px;
+    margin-right: 8px;
+
+    .application__checkbox:checked+& {
+        fill: map-get($colors, 'hover');
+        border-color: map-get($colors, 'hover');
+    }
+}
+.application__checkbox-link {
+  @extend %checkbox;
+}
+.application__checkbox-label {
+    @extend %checkbox;
+    color: map-get($colors, 'label');
+}
+.application__checkbox-link {
+    color: map-get($colors, 'hover');
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.application__button-container {
+    display: flex;
+    justify-content: center;
+}
+.application__form-button {
+    width: 200px;
+    height: 50px;
+    background-color: map-get($colors, 'hover');
+    color: map-get($colors, 'white');
+    @include font(700, 16px, 1.88, 0.06em);
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 300ms linear;
+
+    &:hover,
+    &:focus {
+        background-color: map-get($colors, 'button-hover');
+    }
+}
+

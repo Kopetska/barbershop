@@ -1,0 +1,91 @@
+.form {
+    width: 560px;
+    height: 310px;
+}
+
+.form__container {
+    display: flex;
+}
+
+.form__item {
+    position: relative;
+
+    &:first-child {
+        margin-right: 30px;
+        margin-bottom: 50px;
+    }
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include font(600, 11px, 1.36, 0.1em);
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 300ms linear;
+
+    .form__input:focus+&,
+    .form__input:hover+& {
+        color: map-get($colors, 'white');
+    }
+
+    .form__message:focus+&,
+    .form__message:hover+& {
+        color: map-get($colors, 'white');
+    }
+}
+.form__input {
+    width: 260px;
+    background-color: transparent;
+
+border: {
+    bottom: 1px solid rgba(157, 164, 189, 0.4);
+    top: transparent;
+    right: transparent;
+    left: transparent;
+}
+    padding-bottom: 8px;
+    transition: border-bottom-color 300ms linear;
+    color: map-get($colors, 'white');
+
+    &:focus,
+    &:hover {
+        border-bottom-color: map-get($colors, 'white');
+    }
+}
+.form__input--padding-min {
+    padding-left: 40px;
+}
+.form__input--padding-max {
+    padding-left: 70px;
+}
+.form__input--padding {
+    padding-left: 85px;
+}
+.form__message-container {
+    position: relative;
+}
+.form__message {
+    width: 560px;
+    height: 76px;
+    padding-bottom: 60px;
+    border: {
+        bottom: 1px solid rgba(157, 164, 189, 0.4);
+        top: transparent;
+        right: transparent;
+        left: transparent;
+    }
+    background-color: transparent;
+    resize: none;
+    margin-bottom: 44px;
+    transition: border-bottom-color 300ms linear;
+    color: map-get($colors, 'white');
+
+    &:focus,
+    &:hover {
+        border-bottom-color: map-get($colors, 'white');
+    }
+}
+
+
+
